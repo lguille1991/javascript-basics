@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let pets = ["dogs", "cats", "birds"]; //This is how to declare an array in JavaScript
+      console.log(pets); // ["dogs", "cats", "birds"];
+
+      pets.push("rats");
+      console.log(pets); // ["dogs", "cats", "birds", "rats"];
+
+      let removedItem = pets.pop();
+      console.log(removedItem); // rats
+
+      console.log(pets[1]); // cats
+      console.log(pets[9]); // undefined because index doesn't exist
+
+      console.log("Array lenght: " + pets.length);
+      console.log("Last element in array: " + pets[pets.length - 1]);
+    </script>
+  </body>
+</html>
